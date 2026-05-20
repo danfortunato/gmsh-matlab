@@ -118,11 +118,10 @@ When `GMSH_SRC` is set, the harness:
 
 When unset, it runs only the MATLAB port and reports `RAN` / `matlab failed`.
 
-See [STATUS.md](STATUS.md) and [examples/STATUS.md](examples/STATUS.md)
-for current per-tutorial / per-example test results, plus documented
-caveats around macOS OpenMP conflicts and the gmsh-build-identity
-issue (different libgmsh builds produce different meshes for the same
-input).
+See [examples/STATUS.md](examples/STATUS.md) for per-example test
+results, plus documented caveats around macOS OpenMP conflicts and the
+gmsh-build-identity issue (different libgmsh builds produce different
+meshes for the same input).
 
 ## Known limitations
 
@@ -135,4 +134,4 @@ input).
 - **Mesh output is not byte-identical between gmsh builds** — two
   different builds of the same gmsh release (e.g. Homebrew vs the pip
   wheel) produce ~1% different meshes for the same input because they
-  bundle different OpenCASCADE, BLAS, METIS, etc. See STATUS.md.
+  bundle different OpenCASCADE, BLAS, METIS, etc.
