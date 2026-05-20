@@ -1,0 +1,29 @@
+# macOS files
+.DS_Store
+
+# MATLAB files
+*.mex*
+*.asv
+*.m~
+
+# Python files
+__pycache__/
+*.pyc
+
+# Gmsh files
+*.msh
+*.pos
+*.brep
+*.step
+*.stp
+*.x3d
+examples/api/x3d_output/
+!examples/api/bgmesh.pos
+!examples/api/as1-tu-203.stp
+!examples/api/step_boundary_colors.stp
+!tutorials/view1.pos
+!tutorials/view3.pos
+!tutorials/view4.pos
+!tutorials/t7_bgmesh.pos
+!tutorials/t17_bgmesh.pos
+!tutorials/t20_data.step

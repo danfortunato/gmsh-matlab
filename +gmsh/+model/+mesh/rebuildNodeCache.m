@@ -1,0 +1,13 @@
+function rebuildNodeCache(onlyIfNecessary)
+%REBUILDNODECACHE  gmsh.model.mesh.rebuildNodeCache
+%   Rebuild the node cache.
+%
+%   Inputs:
+%     onlyIfNecessary - logical scalar (default true)
+
+    arguments
+        onlyIfNecessary (1,1) logical = true
+    end
+
+    gmsh.internal.api.call('gmshModelMeshRebuildNodeCache', onlyIfNecessary);
+end
